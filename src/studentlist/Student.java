@@ -13,6 +13,7 @@ package studentlist;
 public class Student {
     private String name;
     private int ID;
+    private String dob = "01/01/2000";
     
     public Student()
     {
@@ -21,9 +22,10 @@ public class Student {
     }
     public Student(String givenName, int givenID)
     {
-          this.name = givenName;
+          name = givenName;
           this.ID = givenID;
     }
+    //This method sets the value of the name property
     public void setName(String givenName)
     {
        this.name = givenName;
@@ -42,5 +44,19 @@ public class Student {
     public int getID ()
     {   
         return ID;
+    }
+
+    /**
+     * @return the dob
+     */
+    public String getDob() {
+        return dob;
+    }
+
+    /**
+     * @param dob the dob to set
+     */
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 }
